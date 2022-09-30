@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brown: #DF6951;
+  --primary-blue: #181E4B;
+  --secondary-blue: #1E1D4C;
+  --tertiary-blue: #39425D;
+  --darkblue: #14183E;
+  --gray: #5E6282;
+  --yellow: #F1A501;
+  --white: #FFFFFF;
+  --orange: #F15A2B;
+  --celestialblue: #006380;
+  --black: #080809;
+  --violate: #8A79DF;
+}/*# sourceMappingURL=base.css.map */
