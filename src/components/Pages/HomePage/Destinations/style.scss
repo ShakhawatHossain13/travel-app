@@ -1,0 +1,45 @@
+.destinations{
+    margin-top: 202px;
+    &__row{
+        margin: auto;
+        text-align: center; 
+        &__design{
+            position: absolute;      
+            right: 58px;
+        }
+        &__tagline{
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px; 
+            font-family: 'Poppins', sans-serif; 
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: var(--gray);
+        }
+        &__heading{     
+            font-family: 'Volkhov', serif;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 64px;            
+            text-transform: capitalize;            
+            color: #14183E;     
+        }
+        &__places{
+            margin-top: 66.09px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+           
+            &__point{
+                width: 315px;
+                         
+                &__image{
+                                   
+                }
+               
+                 
+            }
+        }
+    }
+}
+
+ 

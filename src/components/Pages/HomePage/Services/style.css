@@ -1,1 +1,82 @@
-/*# sourceMappingURL=style.css.map */
+.services {
+  margin-top: 202px;
+}
+.services__row {
+  margin: auto;
+  text-align: center;
+}
+.services__row__design {
+  position: absolute;
+  right: 58px;
+}
+.services__row__tagline {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.services__row__heading {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #14183E;
+}
+.services__row__points {
+  margin-top: 66.09px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.services__row__points__point {
+  width: 267px;
+  border-radius: 36px;
+  position: relative;
+}
+.services__row__points__point__image {
+  margin-bottom: 14px;
+  margin-top: 40px;
+  height: 81px;
+}
+.services__row__points__point__heading {
+  margin: 15px auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: var(--secondary-blue);
+}
+.services__row__points__point__content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--gray);
+  padding: 42px;
+  padding-top: 0;
+}
+.services__row__points__point__effect {
+  display: none;
+  height: 100px;
+  width: 100px;
+  background-color: #DF6951;
+  border-radius: 30px 0px 10px;
+  position: absolute;
+  top: 253px;
+  z-index: -1;
+  left: -35px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.services__row__points__point:hover .services__row__points__point__effect {
+  display: block;
+}
+
+.services__row__points__point:hover {
+  background-color: var(--white);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}/*# sourceMappingURL=style.css.map */

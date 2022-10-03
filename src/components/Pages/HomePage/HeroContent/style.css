@@ -1,1 +1,93 @@
-/*# sourceMappingURL=style.css.map */
+.herocontent__row {
+  margin: auto;
+}
+
+.herocontent__row__content {
+  width: 54.28%;
+  margin-top: 113px;
+}
+
+.herocontent__row__content__tagline {
+  font-size: 20px;
+  color: var(--brown);
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+
+.herocontent__row__content__heading {
+  font-family: "Volkhov", serif;
+  font-weight: bold;
+  font-size: 84px;
+  line-height: 89px;
+  vertical-align: top;
+  letter-spacing: -0.2rem;
+  position: relative;
+  color: var(--primary-blue);
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+
+.herocontent__row__content__desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  vertical-align: top;
+  color: var(--gray);
+  width: 72%;
+}
+
+.herocontent__row__content__buttons {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.herocontent__row__content__buttons__findout {
+  height: 60px;
+  width: 170px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--yellow);
+  border: 0;
+  float: left;
+  text-transform: capitalize;
+}
+
+.herocontent__row__content__buttons__play {
+  margin-top: -12px;
+  margin-left: 10px;
+}
+
+.herocontent__row__content__buttons__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  margin: 17px 0 0 0;
+  color: var(--gray-secondary);
+  font-weight: 500;
+  margin-left: -8px;
+}
+
+.herocontent__row__content__heading__image {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  z-index: -1;
+}
+
+.herocontent__row__background__decore {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.herocontent__row__background__traveller {
+  position: absolute;
+  right: 6.5%;
+  top: 13%;
+  width: 765px;
+}/*# sourceMappingURL=style.css.map */

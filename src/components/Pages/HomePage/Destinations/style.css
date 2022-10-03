@@ -1,1 +1,36 @@
-/*# sourceMappingURL=style.css.map */
+.destinations {
+  margin-top: 202px;
+}
+.destinations__row {
+  margin: auto;
+  text-align: center;
+}
+.destinations__row__design {
+  position: absolute;
+  right: 58px;
+}
+.destinations__row__tagline {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.destinations__row__heading {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+  text-transform: capitalize;
+  color: #14183E;
+}
+.destinations__row__places {
+  margin-top: 66.09px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.destinations__row__places__point {
+  width: 315px;
+}/*# sourceMappingURL=style.css.map */
