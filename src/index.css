@@ -18,6 +18,7 @@ body {
   --gray-secondary: #686D77;
   --yellow: #F1A501;
   --white: #FFFFFF;
+  --secondary-white: #F5F5F5 ;
   --orange: #F15A2B;
   --celestialblue: #006380;
   --black: #080809;
@@ -39,4 +40,7 @@ span
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+button{
+  cursor: pointer;
 }

@@ -1,0 +1,18 @@
+.subscribesection{
+    font-family: 'Poppins', sans-serif; 
+    margin: auto;
+    text-align: center;
+    &__row{
+        height: 407px;
+        background-color: rgb(223, 215, 249, 0.2)   ;  
+        border-radius: 129px 20px 20px 20px;       
+        &__title{
+            transform:none;
+            font-size: 33px;
+            line-height: 54px; 
+            text-align: center;  
+            color: var(--gray);
+            padding: 72px 5%;
+        }
+    }
+}

@@ -47,11 +47,12 @@
     background-color: var(--yellow);
     border: 0;
     float: left;
-    text-transform: capitalize;
+    text-transform: capitalize; 
 }
 .herocontent__row__content__buttons__play{
     margin-top: -12px;
-    margin-left: 10px;
+    margin-left: 10px;    
+    cursor: pointer;
 }
 .herocontent__row__content__buttons__text{
     font-family: 'Poppins', sans-serif;  
@@ -60,7 +61,7 @@
     margin: 17px 0 0 0;
     color: var(--gray-secondary);
     font-weight: 500;
-    margin-left: -8px;
+    margin-left: -8px; 
 }
 .herocontent__row__content__heading__image{
     position: absolute;

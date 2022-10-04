@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import logo from "./Logo.png";
+import dropdown from "./dropdown.png";
 
 const TopNav: React.FC = () => {
     return(
@@ -16,10 +17,7 @@ const TopNav: React.FC = () => {
                     <li className="navbar__row__navigation__list__link">Login</li>
                     <li className="navbar__row__navigation__list__link"><span className="navbar__row__navigation__list__link__signup">Sign up</span></li>
                     <li className="navbar__row__navigation__list__link">
-                    <select className="navbar__row__navigation__list__link__select" name="language" id="language">
-                          <option className="navbar__row__navigation__list__link__select__option"  value="English">EN</option>
-                          <option className="navbar__row__navigation__list__link__select__option"  value="Japanese">JPN</option> 
-                        </select>                      
+                       EN <span><img className="navbar__row__navigation__list__link__dropdown" src={dropdown} alt="Langugage Select dropdown"/></span>                  
                       </li>                    
                 </ul>
             </nav>             

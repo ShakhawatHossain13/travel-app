@@ -11,7 +11,7 @@
   display: block;
 }
 .navbar__row__navigation {
-  margin-left: 25%;
+  margin-left: 222.17px;
   display: block;
   margin-top: 15px;
   padding-top: 6px;
@@ -26,7 +26,7 @@
   font-size: 17px;
   line-height: 22px;
   padding: 9px 0;
-  margin-left: 52px;
+  margin-left: 73px;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   text-align: left;
@@ -34,8 +34,17 @@
 }
 .navbar__row__navigation__list__link__signup {
   border: 1px solid #212832;
-  padding: 8px 21px;
+  padding: 9px 22px;
   border-radius: 6px;
+}
+.navbar__row__navigation__list__link__dropdown {
+  padding: 2px;
+}
+.navbar__row__navigation__list__link:nth-child(1) {
+  margin-left: 0;
+}
+.navbar__row__navigation__list__link:nth-child(5) {
+  margin-left: 84px;
 }
 
 .navbar__row__navigation__list__link__select {

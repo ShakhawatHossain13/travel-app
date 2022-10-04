@@ -59,6 +59,7 @@
 .herocontent__row__content__buttons__play {
   margin-top: -12px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .herocontent__row__content__buttons__text {

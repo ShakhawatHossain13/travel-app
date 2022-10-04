@@ -4,17 +4,19 @@
 .destinations__row {
   margin: auto;
   text-align: center;
+  position: relative;
 }
 .destinations__row__design {
   position: absolute;
-  right: 58px;
+  right: 5px;
+  bottom: 36px !important;
 }
 .destinations__row__tagline {
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   color: var(--gray);
 }
@@ -27,10 +29,42 @@
   color: #14183E;
 }
 .destinations__row__places {
-  margin-top: 66.09px;
+  margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .destinations__row__places__point {
   width: 315px;
+  position: relative;
+  cursor: pointer;
+}
+.destinations__row__places__point__content {
+  width: 315px;
+  height: 130px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  color: var(--gray);
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 24px 24px;
+  text-align: left;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  margin-left: 2px;
+}
+.destinations__row__places__point__content__name {
+  padding: 25px 25px 0 25px;
+}
+.destinations__row__places__point__content__name__amount {
+  float: right;
+}
+.destinations__row__places__point__content__trip {
+  padding: 19px 25px 25px 25px;
+}
+.destinations__row__places__point__content__trip__image {
+  margin-right: 14px;
+}
+.destinations__row__places__point__image {
+  width: 314px;
+  margin-left: 2px;
 }/*# sourceMappingURL=style.css.map */
