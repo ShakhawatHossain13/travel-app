@@ -18,6 +18,7 @@
   line-height: 27px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
+  text-transform: capitalize;
   color: var(--gray);
 }
 .bookatrip__row__half__heading {

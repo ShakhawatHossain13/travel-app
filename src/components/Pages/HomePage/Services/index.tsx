@@ -9,11 +9,11 @@ import group from "./Group__4.png";
 const Services: React.FC = () => {
     return(
       <React.Fragment>
-        <section className="services">
-            <div className="services__row">
-                <img className="services__row__design" src={group} alt="Design" />                
+        <section className="services">            
+            <div className="services__row">                   
+            <img className="services__row__design" src={group} alt="Design" />           
                 <h5 className="services__row__tagline">Category</h5>
-                <h2 className="services__row__heading">We Offer Best Services</h2>
+                <h2 className="services__row__heading">We Offer Best Services</h2> 
                 <div className="services__row__points">
                     <div className="services__row__points__point">
                         <img className="services__row__points__point__image" src={weather} alt="Weather"/>

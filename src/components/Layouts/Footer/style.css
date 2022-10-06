@@ -1,1 +1,59 @@
-/*# sourceMappingURL=style.css.map */
+.footer {
+  margin-top: 166px;
+  font-family: "Poppins", sans-serif;
+  color: var(--gray);
+  width: 1160.58px;
+}
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 72px;
+}
+.footer__row__column__logo {
+  line-height: 66px;
+}
+.footer__row__column__slogan {
+  margin-top: 19px;
+  font-size: 13px;
+  line-height: 16px;
+  width: 207px;
+}
+.footer__row__column__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+.footer__row__column__item {
+  margin-bottom: 12px;
+}
+.footer__row__column__social__media__icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 177px;
+  margin-bottom: 26px;
+}
+.footer__row__column__app__icons {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+.footer__row__column__app__icons__icon {
+  width: 100px;
+}
+.footer__row__column__app__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+.footer__copyright {
+  padding: 74px;
+}
+.footer__copyright__text {
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17.43px;
+}/*# sourceMappingURL=style.css.map */

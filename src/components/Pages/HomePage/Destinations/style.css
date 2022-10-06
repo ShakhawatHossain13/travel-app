@@ -1,5 +1,6 @@
 .destinations {
   margin-top: 202px;
+  width: 1102px;
 }
 .destinations__row {
   margin: auto;
@@ -16,9 +17,10 @@
   font-weight: 600;
   line-height: 27px;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 8px;
-  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-transform: capitalize;
   color: var(--gray);
+  margin-bottom: 8px;
 }
 .destinations__row__heading {
   font-family: "Volkhov", serif;
