@@ -1,10 +1,10 @@
 @use "../mixins" as *;
 
-$animation-timing: 6s;
-$carousel-items: 3;
+$animation-timing: 1s;
+$carousel-items: 2;
 $animation-delay-fraction: $animation-timing / $carousel-items;
-$animation-steps-fraction: 100 / $carousel-items;
-$slide-change-timing: 6; // percentage of total animation cycle
+$animation-steps-fraction: 100/$carousel-items;
+$slide-change-timing: 1; // percentage of total animation cycle
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -26,30 +26,45 @@ $slide-change-timing: 6; // percentage of total animation cycle
                 @include tagline();
                 margin-bottom: 8px;
             }
+            &__buttons{
+              margin-top: 82px;
+            }
+            &__buttons .dot{
+              margin-right: 26px;
+              cursor: pointer;
+              height: 15px;
+              width: 15px;          
+              background-color: #bbb;
+              border: 0;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
             &__heading {
                 @include heading();
             }
             &__carousel{
                 position: relative;
                 width: 100%;
-                max-width: 500px;
-                height: 400px;;
+                max-width: 500px; 
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 &__item{
-                    width: 504px;
-                    height: 245px;  
+                    width: 504px;        
                     padding: 28px;    
                     background: var(--white);
-                    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+                    top: 35px;
+                    left: 86px;
+              //      box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
                     border-radius: 10px; 
                     align-items: center;
                     position: absolute; 
-                    opacity: 0;
-                    filter: drop-shadow(0 2px 2px #555);
+                    opacity: 1;
+                   filter: drop-shadow(0 1px 1px #555);
                     will-change: transform, opacity;
-                    animation: carousel-animate-vertical $animation-timing linear infinite;
+              //    animation: carousel-animate-vertical $animation-timing linear 1;
+              //    animation-iteration-count: infinite;
                     &__picture{
                         position: absolute;
                         top: -34px;
@@ -80,73 +95,87 @@ $slide-change-timing: 6; // percentage of total animation cycle
         }
     }
 }
+ 
 
+.active, .dot:hover {
+  background-color: #717171;
+}
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-@for $i from 1 through ($carousel-items - 1) { 
-    .testimonialsection__row__half__carousel__item:nth-child(#{$i}) {
-      animation-delay: calc(#{$animation-delay-fraction} * #{$i - 2});
-    }
-  }
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+// @for $i from 1 through ($carousel-items - 1) { 
+//     .testimonialsection__row__half__carousel__item:nth-child(#{$i}) {
+//       animation-delay: calc(#{$animation-delay-fraction} * #{$i - 2});
+//     }
+//   }
   
-  .testimonialsection__row__half__carousel__item:last-child {
-    animation-delay: calc(-#{$animation-delay-fraction} * 2);
-  }
+//   .testimonialsection__row__half__carousel__item:last-child {
+//     animation-delay: calc(-#{$animation-delay-fraction} * 2);
+//   }
   
 
-@keyframes carousel-animate-vertical {
-    0% {
-      transform: translateY(30%)  translateX(7%)  scale(1);
-      opacity: 0;
-      visibility: hidden;
-      z-index: 1;
-    }
-    // 20% {
-    //   transform: translateY(30%) translateX(4%)  scale(1);
-    //   opacity: 1;
-    //   z-index: 1;
-    //   visibility: visible;
-    // }
-    33% {
-      transform: translateY(30%) translateX(3%) scale(1);
-      opacity: 1;
-      visibility: visible;
-      z-index: 1;
-    }
-   46%  {
-      transform: translateY(0) translateX(0%) scale(1);
-      opacity: 1;
-      visibility: visible;
-      z-index: 3;
-    }
-   50%  {
-        transform: translateY(0) translateX(0%) scale(1);
-        opacity: 1;
-        visibility: visible;
-        z-index: 3;
-      }
-  66% {
-      transform: translateY(0) translateX(0%)  scale(1);
-      opacity: 0.5;
-      z-index: 2;
-      visibility: visible;
-    }
-  69%    {
-      transform: translateY(0) scale(1);
-      opacity: 0.5;
-      z-index: 1;
-      visibility: visible;
-    }
-    99% {
-      transform: translateY(0) scale(1);
-      opacity: 0.4;
-      z-index: 1;
-      visibility: visible;
-    }
-    100% {
-      transform: translateY(0) scale(1);
-      opacity: 0;
-      visibility: visible;
-    }
-  }
+// @keyframes carousel-animate-vertical {
+//     0% {
+//       transform: translateY(30%)  translateX(7%)  scale(1);
+//       opacity: 0;
+//       visibility: hidden;
+//       z-index: 1;
+//     }
+//     // 20% {
+//     //   transform: translateY(30%) translateX(4%)  scale(1);
+//     //   opacity: 1;
+//     //   z-index: 1;
+//     //   visibility: visible;
+//     // }
+//     33% {
+//       transform: translateY(30%) translateX(3%) scale(1);
+//       opacity: 1;
+//       visibility: visible;
+//       z-index: 1;
+//     }
+//    46%  {
+//       transform: translateY(0) translateX(0%) scale(1);
+//       opacity: 1;
+//       visibility: visible;
+//       z-index: 3;
+//     }
+//    50%  {
+//         transform: translateY(0) translateX(0%) scale(1);
+//         opacity: 1;
+//         visibility: visible;
+//         z-index: 3;
+//       }
+//   66% {
+//       transform: translateY(0) translateX(0%)  scale(1);
+//       opacity: 1;
+//       z-index: 2;
+//       visibility: visible;
+//     }
+//   69%    {
+//       transform: translateY(0) scale(1);
+//       opacity: 1;
+//       z-index: 1;
+//       visibility: visible;
+//     }
+//     99% {
+//       transform: translateY(0) scale(1);
+//       opacity: 1;
+//       z-index: 1;
+//       visibility: visible;
+//     }
+//     100% {
+//       transform: translateY(0) scale(1);
+//       opacity: 1;
+//       visibility: visible;
+//     }
+//   }
   
