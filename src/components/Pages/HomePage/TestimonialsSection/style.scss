@@ -92,10 +92,40 @@ $slide-change-timing: 1; // percentage of total animation cycle
                     }
                 }
             }  
+            &__pagination{
+              
+            }
         }
     }
 }
  
+
+
+.Jactive {
+  display:block;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.Jinactive { 
+  z-index:-1; 
+  display:block;
+  position: absolute;
+  top:50px;
+  left: 20px;
+  
+}
+/* Fading animation */
+.testimonialsection__row__half__carousel__item {
+ animation-name: fade1;
+ animation-duration: 1.5s;
+}
+
+@keyframes fade1 {
+ from {opacity: .4} 
+ to {opacity: 1}
+}
 
 .active, .dot:hover {
   background-color: #717171;

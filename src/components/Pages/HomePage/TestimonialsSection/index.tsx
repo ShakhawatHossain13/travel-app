@@ -23,6 +23,43 @@ const showSlides = (n:number ) =>{
     (slides[slideIndex-1] as HTMLHeadingElement).style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
+
+
+
+const [animation, setAnimation] = React.useState<string>("none");
+
+const plusSlides = (n:number) =>{
+        showCarousel(slide += n);
+}
+
+let slide = 1;
+//showCarousel(slide);
+
+const showCarousel = (n:number) => {
+    let i;
+    let slides = document.getElementsByClassName("testimonialsection__row__half__carousel__item"); 
+    if (n > slides.length) {slide = 1}    
+    if (n = (slides.length-1)) {
+      (slides[0] as HTMLDivElement).style.display = "block"; 
+    }
+    if (n < 1) {slide = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      (slides[i] as HTMLDivElement).style.display = "none";  
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].className = slides[i].className.replace(" Jactive", "");
+      slides[i].className = slides[i].className.replace(" Jinactive", "");
+    }
+     
+   ( slides[slide-1]  as HTMLDivElement).style.display = "block";  
+    slides[slide-1].className += " Jactive";
+    (slides[slide]  as HTMLDivElement).style.display = "block";  
+    slides[slide].className += " Jinactive";
+    
+  
+  }
+
+
        
   //  showSlides(1);
     return(
@@ -31,7 +68,7 @@ const showSlides = (n:number ) =>{
                 <div className="testimonialsection__row">                    
                 <div className="testimonialsection__row__half">
                         <h5 className="testimonialsection__row__half__tagline">TESTIMONIALS</h5>
-                        <h2   className="testimonialsection__row__half__heading mySlides fade">1 What people say
+                        <h2 className="testimonialsection__row__half__heading mySlides fade">1 What people say
                             about Us.</h2>      
                         <h2 className="testimonialsection__row__half__heading mySlides fade">2 What people say
                             about Us.</h2> 
@@ -53,7 +90,7 @@ const showSlides = (n:number ) =>{
                                 <h5 className="testimonialsection__row__half__carousel__item__name">Mike Taylor 1</h5>
                                 <p className="testimonialsection__row__half__carousel__item__location">Lahore, Pakistan</p>
                             </div>    
-                            {/* <div className="testimonialsection__row__half__carousel__item">
+                            <div className="testimonialsection__row__half__carousel__item">
                                 <img className="testimonialsection__row__half__carousel__item__picture" src={person}  alt=""/>
                                 <p className="testimonialsection__row__half__carousel__item__details">
                                      “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
@@ -68,10 +105,45 @@ const showSlides = (n:number ) =>{
                                 </p>
                                 <h5 className="testimonialsection__row__half__carousel__item__name">Mike Taylor 3</h5>
                                 <p className="testimonialsection__row__half__carousel__item__location">Lahore, Pakistan</p>
-                            </div>                                                   */}
-                        </div>                            
+                            </div>      
+                            <div className="testimonialsection__row__half__carousel__item">
+                                <img className="testimonialsection__row__half__carousel__item__picture" src={person}  alt=""/>
+                                <p className="testimonialsection__row__half__carousel__item__details">
+                                     “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                                </p>
+                                <h5 className="testimonialsection__row__half__carousel__item__name">Mike Taylor 4</h5>
+                                <p className="testimonialsection__row__half__carousel__item__location">Lahore, Pakistan</p>
+                            </div>                                             
+                            <div className="testimonialsection__row__half__carousel__item">
+                                <img className="testimonialsection__row__half__carousel__item__picture" src={person}  alt=""/>
+                                <p className="testimonialsection__row__half__carousel__item__details">
+                                     “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                                </p>
+                                <h5 className="testimonialsection__row__half__carousel__item__name">Mike Taylor 5</h5>
+                                <p className="testimonialsection__row__half__carousel__item__location">Lahore, Pakistan</p>
+                            </div> 
+                            <div className="testimonialsection__row__half__carousel__item">
+                                <img className="testimonialsection__row__half__carousel__item__picture" src={person}  alt=""/>
+                                <p className="testimonialsection__row__half__carousel__item__details">
+                                     “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                                </p>
+                                <h5 className="testimonialsection__row__half__carousel__item__name">Mike Taylor 6</h5>
+                                <p className="testimonialsection__row__half__carousel__item__location">Lahore, Pakistan</p>
+                            </div> 
+                            <div className="testimonialsection__row__half__carousel__item">
+                                <img className="testimonialsection__row__half__carousel__item__picture" src={person}  alt=""/>
+                                <p className="testimonialsection__row__half__carousel__item__details">
+                                     “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                                </p>
+                                <h5 className="testimonialsection__row__half__carousel__item__name">Mike Taylor 7</h5>
+                                <p className="testimonialsection__row__half__carousel__item__location">Lahore, Pakistan</p>
+                            </div> 
+                        </div>   
+                        <div className="testimonialsection__row__half__pagination">
+                            <button className="testimonialsection__row__half__pagination__prev" onClick={() =>plusSlides(-1)}>Prev</button> 
+                            <button className="testimonialsection__row__half__pagination__next" onClick={() =>plusSlides(1)}>Next</button>       
+                        </div>                                     
                     </div>
-                    {/* <button onClick={handleCarousel}>Click</button>  */}
                 </div>
             </section>
        </React.Fragment>
@@ -80,15 +152,3 @@ const showSlides = (n:number ) =>{
 
 export default TestimonialsSection; 
 
-
-  // const [animation, setAnimation] = React.useState<string>("none");
-
-    // const handleCarousel = () =>{
-    //     if(animation ==="none"){
-    //         setAnimation(`carousel-animate-vertical 4s linear 1`);
-    //     }else if(animation === `carousel-animate-vertical 4s linear 1`){
-    //         setAnimation('none');
-    //     }
-    //     var r = document.querySelector('.testimonialsection__row__half__carousel__item') as HTMLDivElement; 
-    //     r.style.setProperty('animation', animation ); 
-    // }
