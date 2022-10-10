@@ -33,7 +33,14 @@
                         border-radius: 6px;                  
                     }     
                     &__dropdown{
-                        padding: 2px;
+                        border: 0;
+                        background-color: transparent;
+                        width: 42px;
+                        padding: 0;
+                        font-size: 17px;
+                        &__options{
+                            font-size: 17px !important;
+                        }
                     } 
             }
             &__link:nth-child(1){

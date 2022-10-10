@@ -38,7 +38,14 @@
   border-radius: 6px;
 }
 .navbar__row__navigation__list__link__dropdown {
-  padding: 2px;
+  border: 0;
+  background-color: transparent;
+  width: 42px;
+  padding: 0;
+  font-size: 17px;
+}
+.navbar__row__navigation__list__link__dropdown__options {
+  font-size: 17px !important;
 }
 .navbar__row__navigation__list__link:nth-child(1) {
   margin-left: 0;

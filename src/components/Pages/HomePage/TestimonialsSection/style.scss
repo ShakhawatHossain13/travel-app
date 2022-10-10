@@ -50,6 +50,7 @@ $slide-change-timing: 1; // percentage of total animation cycle
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                margin: auto;
                 &__item{
                     width: 504px;        
                     padding: 28px;    
@@ -93,28 +94,41 @@ $slide-change-timing: 1; // percentage of total animation cycle
                 }
             }  
             &__pagination{
-              
+                position: absolute;
+                right: -50px;
+                top: 20%;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 57.5px;
+                &__prev{
+                  border: 0;
+                  background-color: transparent;
+                }
+                &__next{
+                  border: 0;
+                  background-color: transparent;
+                }
             }
         }
     }
 }
  
 
-
+.active, .dot:hover {
+  background-color: #717171 !important;
+}
 .Jactive {
   display:block;
   position: absolute;
   top:0;
   left: 0;
 }
-
 .Jinactive { 
   z-index:-1; 
   display:block;
   position: absolute;
-  top:50px;
-  left: 20px;
-  
+  top: 77px;
+  left: 48px;
 }
 /* Fading animation */
 .testimonialsection__row__half__carousel__item {
@@ -138,7 +152,7 @@ $slide-change-timing: 1; // percentage of total animation cycle
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .8} 
   to {opacity: 1}
 }
 
