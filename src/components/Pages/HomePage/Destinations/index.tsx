@@ -25,8 +25,7 @@ const Destinations: React.FC = () => {
                                 <img className="destinations__row__places__point__content__trip__image" src={Navigation} alt=""/>
                                 <span className="destinations__row__places__point__content__trip__days">10 days trip</span>
                             </p>
-                        </div>
-                         
+                        </div>                         
                     </div>
                     <div className="destinations__row__places__point">
                         <img className="destinations__row__places__point__image" src={London} alt="London"/>

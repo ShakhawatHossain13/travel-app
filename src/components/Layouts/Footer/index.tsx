@@ -20,7 +20,8 @@ const Footer: React.FC = () => {
                     </div>
                     <div className="footer__row__column">
                        <h5 className="footer__row__column__title">Company</h5>                     
-                            <p  className="footer__row__column__item">About</p> 
+                            <p  className="footer__row__column__item">
+                            <a className="footer__row__column__item__link" href="#">About</a> </p> 
                             <p  className="footer__row__column__item">Career</p> 
                             <p  className="footer__row__column__item">Mobile</p> 
                     </div>

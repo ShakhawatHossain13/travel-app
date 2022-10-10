@@ -26,13 +26,22 @@
   margin-bottom: 24px;
 }
 .footer__row__column__item {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+.footer__row__column__item__link {
+  text-decoration: none;
+  color: var(--gray);
 }
 .footer__row__column__social__media__icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 177px;
   margin-bottom: 26px;
+  margin-left: -10px;
+}
+.footer__row__column__social__media__icons__icon {
+  cursor: pointer;
 }
 .footer__row__column__app__icons {
   margin-top: 16px;
@@ -42,6 +51,7 @@
 }
 .footer__row__column__app__icons__icon {
   width: 100px;
+  cursor: pointer;
 }
 .footer__row__column__app__title {
   font-weight: 500;

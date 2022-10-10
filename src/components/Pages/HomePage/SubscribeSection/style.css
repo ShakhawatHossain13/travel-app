@@ -2,6 +2,12 @@
   font-family: "Poppins", sans-serif;
   margin: auto;
   text-align: center;
+  position: relative;
+}
+.subscribesection__design {
+  position: absolute;
+  bottom: -70px;
+  right: -90px;
 }
 .subscribesection__row {
   height: 407px;
@@ -26,14 +32,18 @@
   gap: 24px;
 }
 .subscribesection__row__box__input {
-  padding: 25px;
+  padding: 24px;
   padding-left: 66px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  border: 0;
+  border: 1px solid var(--white);
   border-radius: 10px;
+}
+.subscribesection__row__box__input:focus {
+  border: 1px solid #FF7D68;
+  outline: none;
 }
 .subscribesection__row__box__image {
   position: absolute;

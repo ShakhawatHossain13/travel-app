@@ -65,4 +65,17 @@
   background-color: transparent;
   border: 0;
   font-size: 17px;
+}
+
+.navbar__row__navigation__list__link__dropdown__options {
+  font-size: 14px !important;
+  background: rgba(255, 255, 255, 0.2);
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__row__navigation__list__link__dropdown__options:hover {
+  font-size: 14px !important;
+  background: rgba(255, 125, 104, 0.2);
 }/*# sourceMappingURL=style.css.map */

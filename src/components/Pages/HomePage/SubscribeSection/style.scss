@@ -2,10 +2,12 @@
     font-family: 'Poppins', sans-serif; 
     margin: auto;
     text-align: center;
-    // &__design{
-    //     position: absolute;       
-    //     right: 58px;
-    // }
+    position: relative;
+    &__design{
+        position: absolute;       
+        bottom: -70px;
+        right: -90px;
+    }
     &__row{       
         height: 407px;
         background-color: rgb(223, 215, 249, 0.2)   ;  
@@ -28,14 +30,18 @@
             position: relative;
             gap: 24px;
             &__input{                
-                padding: 25px;  
+                padding: 24px;  
                 padding-left: 66px;
                 font-family: 'Montserrat', sans-serif;           
                 font-size: 14px;
                 line-height: 17px;
                 font-weight: 400;
-                border: 0;
+                border: 1px solid var(--white);
                 border-radius: 10px; 
+            }
+            &__input:focus{
+                border: 1px solid #FF7D68;
+                outline: none;
             }
             &__image{
                 position: absolute;
@@ -54,7 +60,7 @@
                 border-radius: 10px;
                 border: 0;
             }
-        }
+        }       
         &__send{
             position: absolute;
             top: -20px;
